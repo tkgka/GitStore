@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F922BDFE29DD9AE800A79EFB /* GitStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BDFD29DD9AE800A79EFB /* GitStoreApp.swift */; };
-		F922BE0029DD9AE800A79EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BDFF29DD9AE800A79EFB /* ContentView.swift */; };
 		F922BE0229DD9AEB00A79EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922BE0129DD9AEB00A79EFB /* Assets.xcassets */; };
 		F922BE0529DD9AEB00A79EFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922BE0429DD9AEB00A79EFB /* Preview Assets.xcassets */; };
 		F922BE1029DD9AEB00A79EFB /* GitStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE0F29DD9AEB00A79EFB /* GitStoreTests.swift */; };
 		F922BE1A29DD9AEB00A79EFB /* GitStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE1929DD9AEB00A79EFB /* GitStoreUITests.swift */; };
 		F922BE1C29DD9AEB00A79EFB /* GitStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE1B29DD9AEB00A79EFB /* GitStoreUITestsLaunchTests.swift */; };
+		F922BE2A29DDA16400A79EFB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F922BE2929DDA16400A79EFB /* ComposableArchitecture */; };
+		F922BE2F29DDA2C300A79EFB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE2E29DDA2C300A79EFB /* RootView.swift */; };
+		F922BE3529DDA3D100A79EFB /* RootComposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE3429DDA3D100A79EFB /* RootComposable.swift */; };
+		F922BE3729DDA58A00A79EFB /* AppComposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE3629DDA58A00A79EFB /* AppComposable.swift */; };
+		F922BE3929DDA5DE00A79EFB /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922BE3829DDA5DE00A79EFB /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		F922BDFA29DD9AE800A79EFB /* GitStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F922BDFD29DD9AE800A79EFB /* GitStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStoreApp.swift; sourceTree = "<group>"; };
-		F922BDFF29DD9AE800A79EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F922BE0129DD9AEB00A79EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F922BE0429DD9AEB00A79EFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F922BE0629DD9AEB00A79EFB /* GitStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitStore.entitlements; sourceTree = "<group>"; };
@@ -45,6 +48,10 @@
 		F922BE1529DD9AEB00A79EFB /* GitStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F922BE1929DD9AEB00A79EFB /* GitStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStoreUITests.swift; sourceTree = "<group>"; };
 		F922BE1B29DD9AEB00A79EFB /* GitStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F922BE2E29DDA2C300A79EFB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F922BE3429DDA3D100A79EFB /* RootComposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComposable.swift; sourceTree = "<group>"; };
+		F922BE3629DDA58A00A79EFB /* AppComposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComposable.swift; sourceTree = "<group>"; };
+		F922BE3829DDA5DE00A79EFB /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F922BE2A29DDA16400A79EFB /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +103,7 @@
 		F922BDFC29DD9AE800A79EFB /* GitStore */ = {
 			isa = PBXGroup;
 			children = (
-				F922BDFD29DD9AE800A79EFB /* GitStoreApp.swift */,
-				F922BDFF29DD9AE800A79EFB /* ContentView.swift */,
+				F922BE2B29DDA25800A79EFB /* Sourses */,
 				F922BE0129DD9AEB00A79EFB /* Assets.xcassets */,
 				F922BE0629DD9AEB00A79EFB /* GitStore.entitlements */,
 				F922BE0329DD9AEB00A79EFB /* Preview Content */,
@@ -129,6 +136,34 @@
 			path = GitStoreUITests;
 			sourceTree = "<group>";
 		};
+		F922BE2B29DDA25800A79EFB /* Sourses */ = {
+			isa = PBXGroup;
+			children = (
+				F922BE2C29DDA26000A79EFB /* App */,
+				F922BE2D29DDA2B200A79EFB /* Root */,
+			);
+			path = Sourses;
+			sourceTree = "<group>";
+		};
+		F922BE2C29DDA26000A79EFB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F922BDFD29DD9AE800A79EFB /* GitStoreApp.swift */,
+				F922BE3829DDA5DE00A79EFB /* AppReducer.swift */,
+				F922BE3629DDA58A00A79EFB /* AppComposable.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F922BE2D29DDA2B200A79EFB /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F922BE2E29DDA2C300A79EFB /* RootView.swift */,
+				F922BE3429DDA3D100A79EFB /* RootComposable.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +180,9 @@
 			dependencies = (
 			);
 			name = GitStore;
+			packageProductDependencies = (
+				F922BE2929DDA16400A79EFB /* ComposableArchitecture */,
+			);
 			productName = GitStore;
 			productReference = F922BDFA29DD9AE800A79EFB /* GitStore.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +255,9 @@
 				Base,
 			);
 			mainGroup = F922BDF129DD9AE800A79EFB;
+			packageReferences = (
+				F922BE2829DDA16400A79EFB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = F922BDFB29DD9AE800A79EFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F922BE0029DD9AE800A79EFB /* ContentView.swift in Sources */,
+				F922BE2F29DDA2C300A79EFB /* RootView.swift in Sources */,
+				F922BE3529DDA3D100A79EFB /* RootComposable.swift in Sources */,
 				F922BDFE29DD9AE800A79EFB /* GitStoreApp.swift in Sources */,
+				F922BE3729DDA58A00A79EFB /* AppComposable.swift in Sources */,
+				F922BE3929DDA5DE00A79EFB /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F922BE2829DDA16400A79EFB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 0.52.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F922BE2929DDA16400A79EFB /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F922BE2829DDA16400A79EFB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F922BDF229DD9AE800A79EFB /* Project object */;
 }
